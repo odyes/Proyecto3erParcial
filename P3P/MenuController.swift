@@ -14,7 +14,7 @@ class MenuController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tvMenu: UITableView!
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return 75
+            return 164
         }
         
         func numberOfSections(in tableView: UITableView) -> Int {
@@ -44,7 +44,7 @@ class MenuController: UIViewController, UITableViewDelegate, UITableViewDataSour
             // Do any additional setup after loading the view, typically from a nib.
         menu.append(Menu(nombre: "Molletes", precio1: "Sencillo", precio2: "Con carne", tipo1: "$28.00", tipo2: "$35.00", foto: "molletes"))
         menu.append(Menu(nombre: "Quesadillas", precio1: "Sincronizadas", precio2: "Con carne", tipo1: "$28.00", tipo2: "$35.00", foto: "quesadillas"))
-        menu.append(Menu(nombre: "Sandwich", precio1: "Sencillo", precio2: "De pollo", tipo1: "$28.00", tipo2: "$35.00", foto: "sandiwch"))
+        menu.append(Menu(nombre: "Sandwich", precio1: "Sencillo", precio2: "De pollo", tipo1: "$28.00", tipo2: "$35.00", foto: "sandwich"))
         menu.append(Menu(nombre: "Fajitas", precio1: "De res", precio2: "De pollo", tipo1: "$28.00", tipo2: "$35.00", foto: "fajitas"))
         menu.append(Menu(nombre: "Nachos", precio1: "Sencillos", precio2: "Con carne", tipo1: "$28.00", tipo2: "$35.00", foto: "nachos"))
             
