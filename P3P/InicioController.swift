@@ -19,25 +19,25 @@ class InicioController: UIViewController, UITableViewDelegate, UITableViewDataSo
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if tableView == tvAsistencia {
             return 44
-        } else if tableView == tvMaterias {
+        } 
             return 55
-        }
+        
     }
         
         func numberOfSections(in tableView: UITableView) -> Int {
             if tableView == tvAsistencia {
                 return 1
-            } else if tableView == tvMaterias {
-                return 1
             }
+                return 1
+            
     }
         
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             if tableView == tvAsistencia {
                 return asistencia.count
-            } else if tableView == tvMaterias {
-                return materias.count
             }
+                return materias.count
+            
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -48,7 +48,7 @@ class InicioController: UIViewController, UITableViewDelegate, UITableViewDataSo
             celdaMaterias?.lblMaestro.text = materias[indexPath.row].maestro
             
             return celdaMaterias!
-        } else if tableView == tvAsistencia {
+        }
             let celdaAsistencia = tableView.dequeueReusableCell(withIdentifier: "celdaAsistencia") as? CeldaAsistenciaController
             celdaAsistencia?.lblNMateria.text = asistencia[indexPath.row].nmateria
             celdaAsistencia?.lblHora.text = asistencia[indexPath.row].hora
@@ -58,7 +58,7 @@ class InicioController: UIViewController, UITableViewDelegate, UITableViewDataSo
             celdaAsistencia?.imgFoto.clipsToBounds = true
             
             return celdaAsistencia!
-        }
+        
     }
     
     override func viewDidLoad() {
