@@ -22,6 +22,8 @@
 		FB818D34291AA207008D9D0B /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB818D33291AA207008D9D0B /* Menu.swift */; };
 		FB818D36291AA320008D9D0B /* CeldaMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB818D35291AA320008D9D0B /* CeldaMenuController.swift */; };
 		FB818D38291AA736008D9D0B /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB818D37291AA736008D9D0B /* MenuController.swift */; };
+		FBD475E729228FA00030158F /* Asistencia.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD475E629228FA00030158F /* Asistencia.swift */; };
+		FBD475E929228FB90030158F /* CeldaAsistenciaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD475E829228FB90030158F /* CeldaAsistenciaController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		FB818D33291AA207008D9D0B /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		FB818D35291AA320008D9D0B /* CeldaMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaMenuController.swift; sourceTree = "<group>"; };
 		FB818D37291AA736008D9D0B /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		FBD475E629228FA00030158F /* Asistencia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asistencia.swift; sourceTree = "<group>"; };
+		FBD475E829228FB90030158F /* CeldaAsistenciaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaAsistenciaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,7 @@
 				FB818D35291AA320008D9D0B /* CeldaMenuController.swift */,
 				FB500CF5291E9B05000AD2D5 /* CeldaContactosController.swift */,
 				FB500CFE291EA577000AD2D5 /* CeldaMateriasController.swift */,
+				FBD475E829228FB90030158F /* CeldaAsistenciaController.swift */,
 			);
 			name = Celdas;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				FB500CF3291E9AED000AD2D5 /* Contactos.swift */,
 				FB818D33291AA207008D9D0B /* Menu.swift */,
 				FB500CFC291EA55E000AD2D5 /* Materias.swift */,
+				FBD475E629228FA00030158F /* Asistencia.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -314,6 +320,8 @@
 				FB500CF6291E9B05000AD2D5 /* CeldaContactosController.swift in Sources */,
 				FB500CF8291E9B24000AD2D5 /* ContactosController.swift in Sources */,
 				3D3500E2290AE80300E31F3B /* AppDelegate.swift in Sources */,
+				FBD475E729228FA00030158F /* Asistencia.swift in Sources */,
+				FBD475E929228FB90030158F /* CeldaAsistenciaController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
