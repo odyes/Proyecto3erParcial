@@ -14,6 +14,10 @@
 		3D3500EC290AE80E00E31F3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3500EA290AE80E00E31F3B /* LaunchScreen.storyboard */; };
 		3D3500F7290AE80E00E31F3B /* P3PTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3500F6290AE80E00E31F3B /* P3PTests.swift */; };
 		3D350102290AE80E00E31F3B /* P3PUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D350101290AE80E00E31F3B /* P3PUITests.swift */; };
+		FB07C7F32923E13200BA67C0 /* ContactosEmergenciaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07C7F22923E13200BA67C0 /* ContactosEmergenciaController.swift */; };
+		FB07C7F52923EEB200BA67C0 /* Evaluacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07C7F42923EEB200BA67C0 /* Evaluacion.swift */; };
+		FB07C7F72923EFFA00BA67C0 /* EvaluacionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07C7F62923EFFA00BA67C0 /* EvaluacionController.swift */; };
+		FB07C7F92923F5B300BA67C0 /* FaltasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07C7F82923F5B300BA67C0 /* FaltasController.swift */; };
 		FB500CF4291E9AED000AD2D5 /* Contactos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB500CF3291E9AED000AD2D5 /* Contactos.swift */; };
 		FB500CF6291E9B05000AD2D5 /* CeldaContactosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB500CF5291E9B05000AD2D5 /* CeldaContactosController.swift */; };
 		FB500CF8291E9B24000AD2D5 /* ContactosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB500CF7291E9B24000AD2D5 /* ContactosController.swift */; };
@@ -57,6 +61,10 @@
 		3D3500FD290AE80E00E31F3B /* P3PUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P3PUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D350101290AE80E00E31F3B /* P3PUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P3PUITests.swift; sourceTree = "<group>"; };
 		3D350103290AE80E00E31F3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB07C7F22923E13200BA67C0 /* ContactosEmergenciaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactosEmergenciaController.swift; sourceTree = "<group>"; };
+		FB07C7F42923EEB200BA67C0 /* Evaluacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evaluacion.swift; sourceTree = "<group>"; };
+		FB07C7F62923EFFA00BA67C0 /* EvaluacionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluacionController.swift; sourceTree = "<group>"; };
+		FB07C7F82923F5B300BA67C0 /* FaltasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaltasController.swift; sourceTree = "<group>"; };
 		FB500CF3291E9AED000AD2D5 /* Contactos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contactos.swift; sourceTree = "<group>"; };
 		FB500CF5291E9B05000AD2D5 /* CeldaContactosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaContactosController.swift; sourceTree = "<group>"; };
 		FB500CF7291E9B24000AD2D5 /* ContactosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactosController.swift; sourceTree = "<group>"; };
@@ -164,6 +172,9 @@
 				FB818D37291AA736008D9D0B /* MenuController.swift */,
 				3D3500E3290AE80400E31F3B /* InicioController.swift */,
 				FB500CF7291E9B24000AD2D5 /* ContactosController.swift */,
+				FB07C7F22923E13200BA67C0 /* ContactosEmergenciaController.swift */,
+				FB07C7F62923EFFA00BA67C0 /* EvaluacionController.swift */,
+				FB07C7F82923F5B300BA67C0 /* FaltasController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -175,6 +186,7 @@
 				FB818D33291AA207008D9D0B /* Menu.swift */,
 				FB500CFC291EA55E000AD2D5 /* Materias.swift */,
 				FBD475E629228FA00030158F /* Asistencia.swift */,
+				FB07C7F42923EEB200BA67C0 /* Evaluacion.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -310,13 +322,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB07C7F92923F5B300BA67C0 /* FaltasController.swift in Sources */,
 				FB500CF4291E9AED000AD2D5 /* Contactos.swift in Sources */,
 				FB500CFD291EA55E000AD2D5 /* Materias.swift in Sources */,
 				FB818D38291AA736008D9D0B /* MenuController.swift in Sources */,
 				FB500CFF291EA577000AD2D5 /* CeldaMateriasController.swift in Sources */,
+				FB07C7F52923EEB200BA67C0 /* Evaluacion.swift in Sources */,
 				3D3500E4290AE80400E31F3B /* InicioController.swift in Sources */,
+				FB07C7F32923E13200BA67C0 /* ContactosEmergenciaController.swift in Sources */,
 				FB818D34291AA207008D9D0B /* Menu.swift in Sources */,
 				FB818D36291AA320008D9D0B /* CeldaMenuController.swift in Sources */,
+				FB07C7F72923EFFA00BA67C0 /* EvaluacionController.swift in Sources */,
 				FB500CF6291E9B05000AD2D5 /* CeldaContactosController.swift in Sources */,
 				FB500CF8291E9B24000AD2D5 /* ContactosController.swift in Sources */,
 				3D3500E2290AE80300E31F3B /* AppDelegate.swift in Sources */,

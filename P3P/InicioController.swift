@@ -11,6 +11,7 @@ import UIKit
 class InicioController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var materias : [Materias] = []
     var asistencia : [Asistencia] = []
+    var contactos : [Contactos] = []
     
     @IBOutlet weak var tvAsistencia: UITableView!
     @IBOutlet weak var tvMaterias: UITableView!
@@ -73,10 +74,26 @@ class InicioController: UIViewController, UITableViewDelegate, UITableViewDataSo
         materias.append(Materias(materia: "Tratamiento", maestro: "Emiliano"))
         materias.append(Materias(materia: "Diosito", maestro: "Padre Jorge"))
         
-        asistencia.append(Asistencia(nmateria: "Programación", hora: "7:00-10:00 ", foto: ""))
-        asistencia.append(Asistencia(nmateria: "Mercadotecnia", hora: "10:00-11:00 ", foto: ""))
-        asistencia.append(Asistencia(nmateria: "Tratamiento", hora: "11:00-01:00 ", foto: ""))
+        asistencia.append(Asistencia(nmateria: "Programación", hora: "7:00-10:00 ", foto: "check1"))
+        asistencia.append(Asistencia(nmateria: "Mercadotecnia", hora: "10:00-11:00 ", foto: "check1"))
+        asistencia.append(Asistencia(nmateria: "Tratamiento", hora: "11:00-01:00 ", foto: "check1"))
+        
+        //CONTACTOS
+        contactos.append(Contactos(nombre: "Azalia Peña", numero: "6471179082", parentesco: "Pareja"))
+        contactos.append(Contactos(nombre: "César Amaya", numero: "6471179082", parentesco: "Amigo"))
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToPerfil" {
+            let destino = segue.destination as! ContactosController
+            destino.contactos = contactos
+        }
+        if segue.identifier == "goToMateria" {
+            let destino = segue.destination as! FaltasController
+            destino.materia = materias[tvMaterias.indexPathForSelectedRow!.row]
+        }
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

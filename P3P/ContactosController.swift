@@ -9,7 +9,7 @@
 import UIKit
 
 class ContactosController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-    var contactos :  [Contactos] = []
+    var contactos :  [Contactos]?
     
     @IBOutlet weak var tvContactos: UITableView!
     
@@ -22,29 +22,39 @@ class ContactosController: UIViewController, UITableViewDelegate, UITableViewDat
         }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return contactos.count
+        return contactos!.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celda = tableView.dequeueReusableCell(withIdentifier: "celdaContactos") as? CeldaContactosController
-        celda?.lblParentesco.text = contactos[indexPath.row].parentesco
-        celda?.lblNumero.text = contactos[indexPath.row].numero
-        celda?.lblNombre.text = contactos[indexPath.row].nombre
+        celda?.lblParentesco.text = contactos![indexPath.row].parentesco
+        celda?.lblNumero.text = contactos![indexPath.row].numero
+        celda?.lblNombre.text = contactos![indexPath.row].nombre
         
         return celda!
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToEditar" {
+            let destino = segue.destination as! ContactosEmergenciaController
+            destino.callbackActualizar = actualizarContacto
+            destino.contactos = contactos![tvContactos.indexPathForSelectedRow!.row]
+        }
+    }
+    
+    func actualizarContacto(){
+            tvContactos.reloadData()
     }
     
     override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view, typically from a nib.
-        contactos.append(Contactos(nombre: "Azalia Peña", numero: "6471179082", parentesco: "Pareja"))
-        contactos.append(Contactos(nombre: "César Amaya", numero: "6471179082", parentesco: "Amigo"))
         }
 
-        override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning() {
             super.didReceiveMemoryWarning()
             // Dispose of any resources that can be recreated.
-        }
+    }
     
     
     
