@@ -634,6 +634,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="lblCalificacion" destination="8yc-iP-llJ" id="qVe-2Z-Chx"/>
+                        <outlet property="lblComentarios" destination="EMB-AM-ekw" id="C7Q-1a-dMg"/>
                         <outlet property="lblMaestro" destination="6LD-qm-3Zg" id="AXs-Ll-KqP"/>
                         <outlet property="lblMateria" destination="amy-R6-kdf" id="s7i-ql-1kM"/>
                     </connections>
@@ -713,7 +715,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Evaluar maestro"/>
                                 <connections>
-                                    <action selector="doTapEvaluar:" destination="49p-fi-sOF" eventType="touchUpInside" id="QvU-P0-Eiy"/>
+                                    <action selector="doTapEvaluar:" destination="49p-fi-sOF" eventType="touchUpInside" id="CJa-7T-MUp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -722,8 +724,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Evaluación docente" id="bZG-Rd-CK5"/>
                     <connections>
-                        <outlet property="txtCalificacion" destination="sBm-5q-D7w" id="oRe-Nj-EfV"/>
-                        <outlet property="txtComentario" destination="5ec-rI-XIZ" id="OMp-vo-SFB"/>
+                        <outlet property="lblMaestro" destination="CPR-xd-808" id="ree-v7-JBC"/>
+                        <outlet property="lblMateria" destination="ci1-aw-soU" id="YoP-vK-zTT"/>
+                        <outlet property="txtCalificacion" destination="sBm-5q-D7w" id="hHn-r8-5Zv"/>
+                        <outlet property="txtComentario" destination="5ec-rI-XIZ" id="Mt3-S7-G0S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WYK-Nd-v7s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

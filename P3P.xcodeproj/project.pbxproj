@@ -15,7 +15,6 @@
 		3D3500F7290AE80E00E31F3B /* P3PTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3500F6290AE80E00E31F3B /* P3PTests.swift */; };
 		3D350102290AE80E00E31F3B /* P3PUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D350101290AE80E00E31F3B /* P3PUITests.swift */; };
 		FB07C7F32923E13200BA67C0 /* ContactosEmergenciaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07C7F22923E13200BA67C0 /* ContactosEmergenciaController.swift */; };
-		FB07C7F52923EEB200BA67C0 /* Evaluacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07C7F42923EEB200BA67C0 /* Evaluacion.swift */; };
 		FB07C7F72923EFFA00BA67C0 /* EvaluacionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07C7F62923EFFA00BA67C0 /* EvaluacionController.swift */; };
 		FB07C7F92923F5B300BA67C0 /* FaltasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07C7F82923F5B300BA67C0 /* FaltasController.swift */; };
 		FB500CF4291E9AED000AD2D5 /* Contactos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB500CF3291E9AED000AD2D5 /* Contactos.swift */; };
@@ -23,6 +22,7 @@
 		FB500CF8291E9B24000AD2D5 /* ContactosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB500CF7291E9B24000AD2D5 /* ContactosController.swift */; };
 		FB500CFD291EA55E000AD2D5 /* Materias.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB500CFC291EA55E000AD2D5 /* Materias.swift */; };
 		FB500CFF291EA577000AD2D5 /* CeldaMateriasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB500CFE291EA577000AD2D5 /* CeldaMateriasController.swift */; };
+		FB6ADBB029253CD900E12B24 /* MusticaPro-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB6ADBAF29253CD900E12B24 /* MusticaPro-SemiBold.otf */; };
 		FB818D34291AA207008D9D0B /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB818D33291AA207008D9D0B /* Menu.swift */; };
 		FB818D36291AA320008D9D0B /* CeldaMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB818D35291AA320008D9D0B /* CeldaMenuController.swift */; };
 		FB818D38291AA736008D9D0B /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB818D37291AA736008D9D0B /* MenuController.swift */; };
@@ -62,7 +62,6 @@
 		3D350101290AE80E00E31F3B /* P3PUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P3PUITests.swift; sourceTree = "<group>"; };
 		3D350103290AE80E00E31F3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB07C7F22923E13200BA67C0 /* ContactosEmergenciaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactosEmergenciaController.swift; sourceTree = "<group>"; };
-		FB07C7F42923EEB200BA67C0 /* Evaluacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evaluacion.swift; sourceTree = "<group>"; };
 		FB07C7F62923EFFA00BA67C0 /* EvaluacionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluacionController.swift; sourceTree = "<group>"; };
 		FB07C7F82923F5B300BA67C0 /* FaltasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaltasController.swift; sourceTree = "<group>"; };
 		FB500CF3291E9AED000AD2D5 /* Contactos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contactos.swift; sourceTree = "<group>"; };
@@ -70,6 +69,7 @@
 		FB500CF7291E9B24000AD2D5 /* ContactosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactosController.swift; sourceTree = "<group>"; };
 		FB500CFC291EA55E000AD2D5 /* Materias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materias.swift; sourceTree = "<group>"; };
 		FB500CFE291EA577000AD2D5 /* CeldaMateriasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaMateriasController.swift; sourceTree = "<group>"; };
+		FB6ADBAF29253CD900E12B24 /* MusticaPro-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MusticaPro-SemiBold.otf"; sourceTree = "<group>"; };
 		FB818D33291AA207008D9D0B /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		FB818D35291AA320008D9D0B /* CeldaMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaMenuController.swift; sourceTree = "<group>"; };
 		FB818D37291AA736008D9D0B /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
@@ -130,6 +130,7 @@
 				FB500CF9291E9B32000AD2D5 /* Celdas */,
 				3D3500E1290AE80300E31F3B /* AppDelegate.swift */,
 				3D3500E5290AE80400E31F3B /* Main.storyboard */,
+				FB6ADBAF29253CD900E12B24 /* MusticaPro-SemiBold.otf */,
 				3D3500E8290AE80E00E31F3B /* Assets.xcassets */,
 				3D3500EA290AE80E00E31F3B /* LaunchScreen.storyboard */,
 				3D3500ED290AE80E00E31F3B /* Info.plist */,
@@ -186,7 +187,6 @@
 				FB818D33291AA207008D9D0B /* Menu.swift */,
 				FB500CFC291EA55E000AD2D5 /* Materias.swift */,
 				FBD475E629228FA00030158F /* Asistencia.swift */,
-				FB07C7F42923EEB200BA67C0 /* Evaluacion.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -296,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D3500EC290AE80E00E31F3B /* LaunchScreen.storyboard in Resources */,
+				FB6ADBB029253CD900E12B24 /* MusticaPro-SemiBold.otf in Resources */,
 				3D3500E9290AE80E00E31F3B /* Assets.xcassets in Resources */,
 				3D3500E7290AE80400E31F3B /* Main.storyboard in Resources */,
 			);
@@ -327,7 +328,6 @@
 				FB500CFD291EA55E000AD2D5 /* Materias.swift in Sources */,
 				FB818D38291AA736008D9D0B /* MenuController.swift in Sources */,
 				FB500CFF291EA577000AD2D5 /* CeldaMateriasController.swift in Sources */,
-				FB07C7F52923EEB200BA67C0 /* Evaluacion.swift in Sources */,
 				3D3500E4290AE80400E31F3B /* InicioController.swift in Sources */,
 				FB07C7F32923E13200BA67C0 /* ContactosEmergenciaController.swift in Sources */,
 				FB818D34291AA207008D9D0B /* Menu.swift in Sources */,

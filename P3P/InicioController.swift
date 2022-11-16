@@ -66,13 +66,13 @@ class InicioController: UIViewController, UITableViewDelegate, UITableViewDataSo
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        materias.append(Materias(materia: "Programación", maestro: "Emiliano"))
-        materias.append(Materias(materia: "Comunicación", maestro: "Angelica"))
-        materias.append(Materias(materia: "Animación 3D", maestro: "Memo"))
-        materias.append(Materias(materia: "Mercadotecnia", maestro: "Emiliano"))
-        materias.append(Materias(materia: "Redes", maestro: "Emiliano"))
-        materias.append(Materias(materia: "Tratamiento", maestro: "Emiliano"))
-        materias.append(Materias(materia: "Diosito", maestro: "Padre Jorge"))
+        materias.append(Materias(materia: "Programación", maestro: "Emiliano", calificacion: "", comentario: ""))
+        materias.append(Materias(materia: "Comunicación", maestro: "Angelica", calificacion: "", comentario: ""))
+        materias.append(Materias(materia: "Animación 3D", maestro: "Memo", calificacion: "", comentario: ""))
+        materias.append(Materias(materia: "Mercadotecnia", maestro: "Emiliano", calificacion: "", comentario: ""))
+        materias.append(Materias(materia: "Redes", maestro: "Emiliano", calificacion: "", comentario: ""))
+        materias.append(Materias(materia: "Tratamiento", maestro: "Emiliano", calificacion: "", comentario: ""))
+        materias.append(Materias(materia: "Diosito", maestro: "Padre Jorge", calificacion: "", comentario: ""))
         
         asistencia.append(Asistencia(nmateria: "Programación", hora: "7:00-10:00 ", foto: "check1"))
         asistencia.append(Asistencia(nmateria: "Mercadotecnia", hora: "10:00-11:00 ", foto: "check1"))

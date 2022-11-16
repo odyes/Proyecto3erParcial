@@ -9,9 +9,13 @@
 class Materias {
     var materia : String
     var maestro : String
+    var calificacion : String
+    var comentario : String
     
-    init(materia: String, maestro: String) {
+    init(materia: String, maestro: String, calificacion: String, comentario: String) {
         self.materia = materia
         self.maestro = maestro
+        self.calificacion = calificacion
+        self.comentario = comentario
     }
 }

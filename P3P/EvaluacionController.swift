@@ -9,29 +9,29 @@
 import UIKit
 
 class EvaluacionController : UIViewController {
-    var evaluacion : Evaluacion?
-    var callbackEvaluar : (( ) -> Void)?
+    var callbackEvaluar : ((Materias) -> Void)?
+    var materia : Materias?
     
-    
-    @IBOutlet weak var txtCalificacion: UITextField!
     @IBOutlet weak var txtComentario: UITextField!
+    @IBOutlet weak var txtCalificacion: UITextField!
+    @IBOutlet weak var lblMaestro: UILabel!
+    @IBOutlet weak var lblMateria: UILabel!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        if evaluacion != nil{
-                txtComentario.text = evaluacion!.comentario
-                txtCalificacion.text = evaluacion!.calificacion
-            }
-        }
+        lblMaestro.text = materia?.maestro
+        lblMateria.text = materia?.materia
+        txtComentario.text = materia?.comentario
+        txtCalificacion.text = materia?.calificacion
+    }
+    
     
     @IBAction func doTapEvaluar(_ sender: Any) {
         if callbackEvaluar != nil{
-            evaluacion?.comentario = txtComentario.text!
-            evaluacion?.calificacion = txtCalificacion.text!
-            
+            materia?.calificacion = txtCalificacion.text!
+            materia?.comentario = txtComentario.text!
+            callbackEvaluar!(materia!)
             self.navigationController?.popViewController(animated: true)
             }
     }
-    
     
 }
