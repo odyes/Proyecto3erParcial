@@ -16,6 +16,10 @@ class InicioController: UIViewController, UITableViewDelegate, UITableViewDataSo
     @IBOutlet weak var tvAsistencia: UITableView!
     @IBOutlet weak var tvMaterias: UITableView!
     
+    @IBOutlet weak var imgPerfil: UIImageView!
+    
+    @IBOutlet weak var cuadro2: UIView!
+    @IBOutlet weak var cuadro1: UIView!
     //Celda Materias
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if tableView == tvAsistencia {
@@ -81,6 +85,9 @@ class InicioController: UIViewController, UITableViewDelegate, UITableViewDataSo
         //CONTACTOS
         contactos.append(Contactos(nombre: "Azalia Peña", numero: "6471179082", parentesco: "Pareja"))
         contactos.append(Contactos(nombre: "César Amaya", numero: "6471179082", parentesco: "Amigo"))
+        
+        imgPerfil.layer.cornerRadius = imgPerfil.bounds.size.width / 2.0
+        cuadro1.layer.cornerRadius = cuadro2.bounds.size.width / 15.0
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
