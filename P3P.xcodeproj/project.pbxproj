@@ -28,6 +28,9 @@
 		FB818D38291AA736008D9D0B /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB818D37291AA736008D9D0B /* MenuController.swift */; };
 		FBD475E729228FA00030158F /* Asistencia.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD475E629228FA00030158F /* Asistencia.swift */; };
 		FBD475E929228FB90030158F /* CeldaAsistenciaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD475E829228FB90030158F /* CeldaAsistenciaController.swift */; };
+		FBF7EA202927D9C500119677 /* Calendario.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF7EA1F2927D9C500119677 /* Calendario.swift */; };
+		FBF7EA222927D9EC00119677 /* CeldaCalendarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF7EA212927D9EC00119677 /* CeldaCalendarioController.swift */; };
+		FBF7EA242927DA4D00119677 /* CalendarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF7EA232927DA4D00119677 /* CalendarioController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 		FB818D37291AA736008D9D0B /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		FBD475E629228FA00030158F /* Asistencia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asistencia.swift; sourceTree = "<group>"; };
 		FBD475E829228FB90030158F /* CeldaAsistenciaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaAsistenciaController.swift; sourceTree = "<group>"; };
+		FBF7EA1F2927D9C500119677 /* Calendario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendario.swift; sourceTree = "<group>"; };
+		FBF7EA212927D9EC00119677 /* CeldaCalendarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaCalendarioController.swift; sourceTree = "<group>"; };
+		FBF7EA232927DA4D00119677 /* CalendarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarioController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +169,7 @@
 				FB500CF5291E9B05000AD2D5 /* CeldaContactosController.swift */,
 				FB500CFE291EA577000AD2D5 /* CeldaMateriasController.swift */,
 				FBD475E829228FB90030158F /* CeldaAsistenciaController.swift */,
+				FBF7EA212927D9EC00119677 /* CeldaCalendarioController.swift */,
 			);
 			name = Celdas;
 			sourceTree = "<group>";
@@ -176,6 +183,7 @@
 				FB07C7F22923E13200BA67C0 /* ContactosEmergenciaController.swift */,
 				FB07C7F62923EFFA00BA67C0 /* EvaluacionController.swift */,
 				FB07C7F82923F5B300BA67C0 /* FaltasController.swift */,
+				FBF7EA232927DA4D00119677 /* CalendarioController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -187,6 +195,7 @@
 				FB818D33291AA207008D9D0B /* Menu.swift */,
 				FB500CFC291EA55E000AD2D5 /* Materias.swift */,
 				FBD475E629228FA00030158F /* Asistencia.swift */,
+				FBF7EA1F2927D9C500119677 /* Calendario.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -326,7 +335,9 @@
 				FB07C7F92923F5B300BA67C0 /* FaltasController.swift in Sources */,
 				FB500CF4291E9AED000AD2D5 /* Contactos.swift in Sources */,
 				FB500CFD291EA55E000AD2D5 /* Materias.swift in Sources */,
+				FBF7EA222927D9EC00119677 /* CeldaCalendarioController.swift in Sources */,
 				FB818D38291AA736008D9D0B /* MenuController.swift in Sources */,
+				FBF7EA242927DA4D00119677 /* CalendarioController.swift in Sources */,
 				FB500CFF291EA577000AD2D5 /* CeldaMateriasController.swift in Sources */,
 				3D3500E4290AE80400E31F3B /* InicioController.swift in Sources */,
 				FB07C7F32923E13200BA67C0 /* ContactosEmergenciaController.swift in Sources */,
@@ -336,6 +347,7 @@
 				FB500CF6291E9B05000AD2D5 /* CeldaContactosController.swift in Sources */,
 				FB500CF8291E9B24000AD2D5 /* ContactosController.swift in Sources */,
 				3D3500E2290AE80300E31F3B /* AppDelegate.swift in Sources */,
+				FBF7EA202927D9C500119677 /* Calendario.swift in Sources */,
 				FBD475E729228FA00030158F /* Asistencia.swift in Sources */,
 				FBD475E929228FB90030158F /* CeldaAsistenciaController.swift in Sources */,
 			);
